@@ -2,6 +2,12 @@
 
 This standalone server-side mod adjusts only newly acquired Player and Alliance `InventoryItemType.Turret` items. It does not override `turretgenerator.lua`, change existing inventory items, or modify NPC/enemy turrets.
 
+## Update notes — 0.1.1
+
+This update replaces the old Player/Alliance helper scripts with one server-only inventory monitor. The change removes client script-load warnings while preserving the original promise: players joining a server do not need the mod installed, and turrets already present when the server starts remain untouched.
+
+When the optional *Autocannon turret* mod is enabled, its custom Autocannon weapon type is treated as projectile combat and receives the 2.25x turn-speed adjustment.
+
 Steam Workshop: [\[AI\] Turret Dynamics](https://steamcommunity.com/sharedfiles/filedetails/?id=3767994828) · Workshop ID `3767994828`
 
 ## When to enable it

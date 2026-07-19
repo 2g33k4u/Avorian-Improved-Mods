@@ -31,6 +31,12 @@ local categoryByWeaponType = {
     [WeaponType.RepairBeam] = "repair"
 }
 
+-- The optional Autocannon turret mod registers this type at runtime. Avoid a
+-- hard dependency: if that mod is absent, its type simply does not exist.
+if WeaponType.AutoCannon then
+    categoryByWeaponType[WeaponType.AutoCannon] = "projectile"
+end
+
 local turnMultiplierByCategory = {
     projectile = Config.ProjectileCombatTurnMultiplier,
     defensive = Config.DefensiveTurnMultiplier,
