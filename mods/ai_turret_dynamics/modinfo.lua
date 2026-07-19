@@ -8,6 +8,8 @@ meta =
 
 This mod does not alter enemy or NPC turret items, and it does not change existing turret items already installed or stored in inventory.
 
+Update 0.1.1: Replaced the old Player/Alliance helper scripts with a server-only inventory monitor to fix client script-load warnings. Existing turrets are left unchanged when the server starts. Optional Autocannon turret support was added; Autocannons receive the projectile-combat 2.25x turn-speed adjustment.
+
 Best started in a fresh galaxy. It also works safely in an existing save, but only turrets acquired after enabling the mod receive the adjustment; existing turret items remain unchanged.
 
 What it changes:
