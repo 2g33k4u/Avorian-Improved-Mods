@@ -2,6 +2,8 @@
 
 This standalone server-side mod adjusts only newly acquired Player and Alliance `InventoryItemType.Turret` items. It does not override `turretgenerator.lua`, change existing inventory items, or modify NPC/enemy turrets.
 
+Steam Workshop: [\[AI\] Turret Dynamics](https://steamcommunity.com/sharedfiles/filedetails/?id=3767994828) · Workshop ID `3767994828`
+
 ## When to enable it
 
 Turret Dynamics is best started in a fresh galaxy. It also works safely in an existing save, but only turrets acquired after enabling the mod receive the adjustment; all existing turret items remain unchanged.

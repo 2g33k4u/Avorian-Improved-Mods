@@ -1,6 +1,6 @@
 meta =
 {
-    id = "ai_turret_dynamics",
+    id = "3767994828",
     name = "ai_turret_dynamics",
     title = "[AI] Turret Dynamics",
     type = "mod",
@@ -27,7 +27,7 @@ Inspired by crazyscientist's Faster turret rotation speed and Jack_Bob's Freelan
 
 Part of the Avorian Improved [AI] mod suite.]],
     authors = {"2G33K4U"},
-    version = "0.1.0",
+    version = "0.1",
     dependencies = {
         {id = "Avorion", min = "2.5", max = "2.*"},
         {id = "2022427999", incompatible = true},

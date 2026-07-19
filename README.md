@@ -6,7 +6,7 @@ Official source repository for the Avorian Improved **[AI]** mod suite for [Avor
 
 | Mod | Purpose | Installation |
 | --- | --- | --- |
-| [AI] Turret Dynamics | Improves turning responsiveness for newly acquired Player and Alliance turret items. | Server / single-player host only |
+| [\[AI\] Turret Dynamics](https://steamcommunity.com/sharedfiles/filedetails/?id=3767994828) | Improves turning responsiveness for newly acquired Player and Alliance turret items. | Server / single-player host only |
 
 ## Repository layout
 
@@ -15,7 +15,9 @@ Official source repository for the Avorian Improved **[AI]** mod suite for [Avor
 
 ## Releases
 
-GitHub is the source of truth. Steam Workshop is the player-facing download location. Each Workshop item ID and link will be added here after its first Steam publication.
+GitHub is the source of truth. Steam Workshop is the player-facing download location.
+
+- [AI] Turret Dynamics — [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3767994828) · Workshop ID `3767994828`
 
 ## Credits
 
