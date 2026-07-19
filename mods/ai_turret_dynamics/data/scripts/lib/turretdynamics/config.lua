@@ -16,6 +16,10 @@ return {
     ProcessedMarkerValue = "Applied (v1)",
     LegacyProcessedMarkerLabel = "[AI] Turret Dynamics",
 
+    -- The monitor runs twice per second. Its first pass creates a baseline and
+    -- intentionally leaves all pre-existing turrets untouched.
+    ScanInterval = 0.50,
+
     -- Keep false outside diagnostic testing to avoid routine log output.
-    DebugLogging = true
+    DebugLogging = false
 }
