@@ -2,6 +2,10 @@
 
 This standalone server-side mod adjusts only newly acquired Player and Alliance `InventoryItemType.Turret` items. It does not override `turretgenerator.lua`, change existing inventory items, or modify NPC/enemy turrets.
 
+## Update notes — 0.1.2
+
+Turret Dynamics now preserves its server-side inventory baseline across normal save/restart cycles. This improves reliability for new turrets received while a player is offline, without scanning or changing existing turret items. Custom turret-type compatibility is now configuration-based, so optional types such as Autocannon can be supported without adding a dependency.
+
 ## Update notes — 0.1.1
 
 This update replaces the old Player/Alliance helper scripts with one server-only inventory monitor. The change removes client script-load warnings while preserving the original promise: players joining a server do not need the mod installed, and turrets already present when the server starts remain untouched.

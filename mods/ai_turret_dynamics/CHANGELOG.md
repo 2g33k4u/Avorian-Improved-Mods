@@ -1,5 +1,12 @@
 # [AI] Turret Dynamics changelog
 
+## 0.1.2
+
+- Persisted the server-side inventory baseline across normal save/restart cycles for more reliable new-turret detection.
+- Made optional custom weapon-type support configuration-based; Autocannon remains supported without a dependency.
+- Preserved monitor timing remainder after a lag spike for steadier scan cadence.
+- Kept the monitor at its tested 0.5-second interval and made the internal core module local to avoid namespace collisions.
+
 ## 0.1.1
 
 - Replaced client-mirrored Player and Alliance helper scripts with a server-only inventory monitor.

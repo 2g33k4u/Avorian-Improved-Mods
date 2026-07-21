@@ -4,6 +4,10 @@ Turret Dynamics improves the physical traverse speed of newly acquired Player an
 
 This mod is deliberately narrow in scope. It does not alter enemy or NPC turret items, and it does not change existing turret items already installed or stored in inventory.
 
+## Update notes — 0.1.2
+
+This reliability update preserves the server-side inventory baseline across normal save/restart cycles, improving handling of newly received turrets while a player is offline. It does not scan or change existing turret items. Optional custom weapon types are now configuration-based; this keeps Autocannon support dependency-free and makes future custom-turret compatibility easier to maintain.
+
 ## Update notes — 0.1.1
 
 This maintenance update replaces the old Player/Alliance helper scripts with one server-only inventory monitor. It fixes client script-load warnings without changing the mod's gameplay scope: joining players still do not need to install the mod, and turrets already present when the server starts remain untouched.

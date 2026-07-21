@@ -10,6 +10,12 @@ return {
     RepairBeamTurnMultiplier = 1.75,
     RepairBeamRangeMultiplier = 1.50,
 
+    -- Optional custom types use their WeaponType field name as the key. They
+    -- are ignored safely when the mod that registers the type is not enabled.
+    OptionalWeaponCategories = {
+        AutoCannon = "projectile"
+    },
+
     -- This description is the persistent idempotency marker. It is intentionally
     -- visible in the turret tooltip so players can identify a processed item.
     ProcessedMarkerLabel = "◆ [AI] TURRET DYNAMICS — %s ◆",

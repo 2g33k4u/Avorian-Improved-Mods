@@ -88,12 +88,22 @@ function initialize()
     print("[AI] Turret Dynamics: server-only inventory monitor initialized.")
 end
 
+function secure()
+    return {snapshots = snapshots}
+end
+
+function restore(data)
+    if data and type(data.snapshots) == "table" then
+        snapshots = data.snapshots
+    end
+end
+
 function update(timeStep)
     if not onServer() then return end
 
     elapsed = elapsed + timeStep
     if elapsed < Config.ScanInterval then return end
-    elapsed = 0
+    elapsed = elapsed - Config.ScanInterval
 
     scanInventories()
 end

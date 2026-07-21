@@ -8,7 +8,7 @@ meta =
 
 This mod does not alter enemy or NPC turret items, and it does not change existing turret items already installed or stored in inventory.
 
-Update 0.1.1: Replaced the old Player/Alliance helper scripts with a server-only inventory monitor to fix client script-load warnings. Existing turrets are left unchanged when the server starts. Optional Autocannon turret support was added; Autocannons receive the projectile-combat 2.25x turn-speed adjustment.
+Update 0.1.2: Preserves the server-side inventory baseline across normal save/restart cycles for more reliable handling of newly received turrets while a player is offline. Optional custom weapon types are now configuration-based, keeping Autocannon support dependency-free.
 
 Best started in a fresh galaxy. It also works safely in an existing save, but only turrets acquired after enabling the mod receive the adjustment; existing turret items remain unchanged.
 
@@ -29,7 +29,7 @@ Inspired by crazyscientist's Faster turret rotation speed and Jack_Bob's Freelan
 
 Part of the Avorian Improved [AI] mod suite.]],
     authors = {"2G33K4U"},
-    version = "0.1.1",
+    version = "0.1.2",
     dependencies = {
         {id = "Avorion", min = "2.5", max = "2.*"},
         {id = "2022427999", incompatible = true},

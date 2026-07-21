@@ -5,7 +5,7 @@ include("weapontypeutility")
 
 local Config = include("turretdynamics/config")
 
-TurretDynamicsCore = {}
+local TurretDynamicsCore = {}
 
 local categoryByWeaponType = {
     [WeaponType.ChainGun] = "projectile",
@@ -31,10 +31,11 @@ local categoryByWeaponType = {
     [WeaponType.RepairBeam] = "repair"
 }
 
--- The optional Autocannon turret mod registers this type at runtime. Avoid a
--- hard dependency: if that mod is absent, its type simply does not exist.
-if WeaponType.AutoCannon then
-    categoryByWeaponType[WeaponType.AutoCannon] = "projectile"
+for typeName, category in pairs(Config.OptionalWeaponCategories or {}) do
+    local weaponType = WeaponType[typeName]
+    if weaponType then
+        categoryByWeaponType[weaponType] = category
+    end
 end
 
 local turnMultiplierByCategory = {
